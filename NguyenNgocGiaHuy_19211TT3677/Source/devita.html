@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/js/bootstrap.min.js">
+    <link rel="stylesheet" href="public/css/all.min.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Đồ án FE1 - Nguyễn Ngọc Gia Huy - 19211TT3677</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-area">
+        <div class="header-top">
+            <div class="container">
+                <div class="pt-10 pb-10">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-12">
+                            <div class="header-top-left">
+                                <div class="lang-menu">
+                                    <div class="selected-lang">
+                                        Chọn ngôn ngữ
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a class="vn">Việt Nam</a>
+                                        </li>
+                                        <li>
+                                            <a class="us">United States</a>
+                                        </li>
+                                        <li>
+                                            <a class="jp">Japan</a>
+                                        </li>
+                                        <li>
+                                            <a class="cn">China</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="line-top"></div>
+
+                                <div class="currency-menu">
+                                    <span>Currency:</span>
+                                    <div class="lang-crr-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <span>USD</span>
+                                                </a>
+                                                <ul class="curr-dropdown">
+                                                    <li data-currency="VND">
+                                                        <a style="cursor: pointer">VND</a>
+                                                    </li>
+                                                    <li data-currency="EUR">
+                                                        <a style="cursor: pointer">EUR</a>
+                                                    </li>
+                                                    <li data-currency="GBP">
+                                                        <a style="cursor: pointer">GBP</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12 col-12">
+                            <div class="header-top-right">
+                                <ul>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                    <li>
+                                        <a href="#">Register</a>
+                                        <span style="margin: 0 2px; color: #ffffff"> or</span>
+                                        <a href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="header-middle hdm-bg hdm-border-top">
+                <div class="container">
+                    <div class="pt-40 bp-40">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-between align-items-center flex-wrap">
+                                <div class="logo logo-mrg">
+                                    <a href="#">
+                                        <img src="./public/images/logo.png" alt="Devita Electronics">
+                                    </a>
+                                </div>
+
+                                <div class="header-contact middle-same f-right">
+                                    <div class="header-contact-icon">
+                                        <i class="fa-solid fa-headphones-simple" style="color:#ffffff; font-size: 35px;"></i>
+                                    </div>
+                                    <div class="header-contact-content">
+                                        <p style="color: #ffffff;">
+                                            "Call us"
+                                            <br> "Free Support: (012) 800 456 789"
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="header-search">
+                                    <form action="#" method="get" class="header-search-form" role="search">
+                                        <input type="search" name="q" class="input-search" value placeholder="Search entire store here...">
+                                        <div class="action">
+                                            <button type="submit">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="header-cart middle-same f-right">
+                                    <button class="icon-cart ">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="count-amount shopping-cart__total" style="color: #ffffff;">
+                                            <span class="money" data-currency-usd="$0.00">$0.00</span>
+                                        </span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <span class="count-style bigcounter">0</span>
+                                    </button>
+                                    <div class="shopping-cart-content" id="content-shopping">
+                                        <div class="cart-empty-tittle">
+                                            <div class="shopping-cart-empty">
+                                                <h4>Your cart is currently empty.</h4>
+                                            </div>
+                                            <div class="shopping-cart-btn">
+                                                <a class="btn-style btn-hover" href="#">Continue shopping</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="hdr-bottom hbottom_border header-bottom-yellow" style="background-color:#0363cd; height: 60px;">
+                <div class="container">
+                    <div class="main-menu main-none elec-menu">
+                        <nav>
+                            <ul>
+                                <li class="mega-menu-position"><a href="#">Home
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="add_class mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Demo Group 01</li>
+                                                        <li><a href="#">Home
+                                                                - Electronics</a></li>
+                                                        <li><a href="#">Home
+                                                                - Electronics 2</a></li>
+                                                        <li><a href="#">Home
+                                                                - Electronics 3</a></li>
+                                                        <li><a href="#">Home
+                                                                - Electronics 4</a></li>
+                                                        <li><a href="#">Home
+                                                                - Book</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Demo Group 02</li>
+                                                        <li><a href="#">Home
+                                                                - Book 2</a></li>
+                                                        <li><a href="#">Home
+                                                                - Coffee</a></li>
+                                                        <li><a href="#">Home
+                                                                - Cycle</a></li>
+                                                        <li><a href="#">Home
+                                                                - Fashion</a></li>
+                                                        <li><a href="#">Home
+                                                                - Game</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Demo Group 03</li>
+                                                        <li><a href="#">Home
+                                                                - Jewelry</a></li>
+                                                        <li><a href="#">Home
+                                                                - Medical</a></li>
+                                                        <li><a href="#">Home
+                                                                - Sports</a></li>
+                                                        <li><a href="#">Home
+                                                                - Sunglass</a></li>
+                                                        <li><a href="#">Home
+                                                                - Watch</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Demo Group 04</li>
+                                                        <li><a href="#">Home
+                                                                - Construction</a></li>
+                                                        <li><a href="#">Home
+                                                                - Auto Parts</a></li>
+                                                        <li><a href="#">Home
+                                                                - Furniture</a></li>
+                                                        <li><a href="#">Home
+                                                                - PetMarket</a></li>
+                                                        <li><a href="#">Home
+                                                                - Organic</a></li>
+                                                        <li><a href="#">Home
+                                                                - Food</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Demo Group 05</li>
+                                                        <li><a href="#">Home
+                                                                - Shoe</a></li>
+                                                        <li><a href="#">Home
+                                                                - Toy</a></li>
+                                                        <li><a href="#">Home
+                                                                - Christmas</a></li>
+                                                        <li><a href="#">Home
+                                                                - Cosmetic</a></li>
+                                                        <li><a href="#">Home
+                                                                - Housewares</a></li>
+                                                        <li><a href="#">Home
+                                                                - Underwear</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-position"><a href="#">SHOP
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="add_class mega-menu">
+                                        <li>
+                                            <ul>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Shop Layout</li>
+                                                        <li><a href="#">Default Shop</a></li>
+                                                        <li><a href="#">2
+                                                                Column Box</a></li>
+                                                        <li><a href="#">3
+                                                                Column Box</a></li>
+                                                        <li><a href="#">4
+                                                                Column Box</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Shop Layout</li>
+                                                        <li><a href="#">Shop</a></li>
+                                                        <li><a href="#">Shop Left Sidebar</a></li>
+                                                        <li><a href="#">Shop
+                                                                Right Sidebar</a></li>
+                                                        <li><a href="#">Shop
+                                                                No Sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Product Details Layout</li>
+                                                        <li><a href="#">Tab Style 1</a></li>
+                                                        <li><a href="#">Tab
+                                                                Style 2</a></li>
+                                                        <li><a href="#">Tab
+                                                                Style 3</a></li>
+                                                        <li><a href="#">Gallery
+                                                                Left</a></li>
+                                                        <li><a href="h#">Gallery
+                                                                Right</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Product Details Layout</li>
+                                                        <li><a href="#">Sticky
+                                                                Left</a></li>
+                                                        <li><a href="#">Sticky
+                                                                Right</a></li>
+                                                        <li><a href="#">Slider
+                                                                Box</a></li>
+                                                        <li><a href="#">Slider
+                                                                Full Wide</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="devita_megamenu">
+                                                    <ul>
+                                                        <li class="mega-menu-title">Img</li>
+                                                        <li><a href="#">Image</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">PRODUCTS
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="submenu add_class">
+                                        <li>
+                                            <ul>
+                                                <li><a href="#">Affiliate Product</a></li>
+                                                <li><a href="#">Simple Product</a></li>
+                                                <li><a href="#">Variable Product</a></li>
+                                                <li><a href="#">Sold Out Product</a></li>
+                                                <li><a href="#">Countdown Product</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">PAGES
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="submenu add_class">
+                                        <li>
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">LANDING
+                                        PAGE
+                                        <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="submenu add_class">
+                                        <li>
+                                            <ul>
+                                                <li><a href="#">Landing
+                                                        Page 1</a></li>
+                                                <li><a href="#">Landing
+                                                        Page 2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">RTL</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="banner-section">
+            <div class="slider-area" style="background:#fff;padding-top:0px;padding-bottom:0px;">
+                <div class="slider-active owl-dot-style owl-carousel owl-loaded owl-drag">
+                    <div class="single-slider bg-img slider-item" style="background-image:url(./public/images/sp1.jpg); height: 530px;">
+                        <div class="container item_container d-flex align-items-center justify-content-start text-left">
+                            <div class="slider-content slider-animated-1" style="margin-left:75px;margin-right:0px;margin-top: 100px;">
+                                <h5 class="a" style="color:#fff;font-size:18px;">Exclusive Offer -20% Off This Week
+                                </h5>
+                                <h2 class="animate" style="color:#fff;font-size:48px;">Smarter Wifi Thermostat <br>With Room Sensors</h2>
+                                <h3 class="animate" style="color:#fff;font-size:48px; margin-top: 25px;"><span style="font-size: 24px;">Starting at </span> $199.00
+                                </h3>
+                                <div class="slider-btn mt-75" style="margin-top: 70px;">
+                                    <a class="animate" href="#" style="font-size:14px;">SHOPPING NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slider bg-img slider-item" style="background-image:url(./public/images/sp2.jpg); height: 530px;">
+                        <div class="container item_container d-flex align-items-center justify-content-start text-left">
+                            <div class="slider-content slider-animated-1" style="margin-left:75px;margin-right:0px; margin-top: 100px;">
+                                <h5 class="animate" style="color:#fff;font-size:18px;">Exclusive Offer -20% Off This Week
+                                </h5>
+                                <h2 class="animate" style="color:#fff;font-size:48px;">Smarter Wifi Thermostat <br>With Room Sensors</h2>
+                                <h3 class="animate" style="color:#fff;font-size:48px; margin-top: 25px;"><span style="font-size: 24px;">Starting at </span> $199.00
+                                </h3>
+                                <div class="slider-btn mt-75" style="margin-top: 70px;">
+                                    <a class="animate" href="#" style="font-size:14px;">SHOPPING NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-area banner-negative-mrg-2">
+            <div class="container-fluid p-0">
+                <div class="row no-gutter">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="banner-img banner-hover">
+                            <a href="#"><img src="public/images/banner1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="banner-img banner-hover">
+                            <a href="#"><img src="public/images/banner2.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Product-area">
+            <div class="container">
+                <div class="product-tab-list mb-30 nav">
+                    <a class="active" href="#">
+                        <h4>New Arrivals</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Featured</h4>
+                    </a>
+                    <a href="#">
+                        <h4>Top Rated</h4>
+                    </a>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane">
+                        <div class="custom-row">
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 2</span>
+                                        <h4><a href="#">Demo product title</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$80.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 5</span>
+                                        <h4><a href="#">Demo product title</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$50.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="sale">Sale</span>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 3</span>
+                                        <h4><a href="#">Variable product</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$61.00</span>
+                                            <span class="product-price-old">
+                                                <span class="money">$85.00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 5</span>
+                                        <h4><a href="#">Simple product</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$50.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 2</span>
+                                        <h4><a href="#">New badge product</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$80.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd6.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 7</span>
+                                        <h4><a href="#">Affiliate product</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd7.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 7</span>
+                                        <h4><a href="#">Demo product title</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$29.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd8.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="sold-out">Sold out</span>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 4</span>
+                                        <h4><a href="#">Soldout product</a></h4>
+                                        <div class="product-price">
+                                            <span classs="money">$19.00</span>
+                                            <span class="product-price-old">
+                                                <span class="money">$29.00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd9.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="sale">Sale</span>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 1</span>
+                                        <h4><a href="#">Product dummy title</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$110.00</span>
+                                            <span class="product-price-old">
+                                                <span class="money">$130.00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-col-5">
+                                <div class="product-2">
+                                    <div class="product-img">
+                                        <div class="product-img-slider">
+                                            <div class="product-image">
+                                                <a class="slick-slide slick-cloned" href="#">
+                                                    <img src="public/images/pd10.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <span>Type 11</span>
+                                        <h4><a href="#">Dummy text for title</a></h4>
+                                        <div class="product-price">
+                                            <span class="money">$39.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-area-3">
+            <div class="connect-area bg-img">
+                <div class="container">
+                    <div class="connect-content" style="max-width: 800px">
+                        <h2 style="color:#242424; ">Stay Connected When You’re Away From Your Phone</h2>
+                        <p style="color:#242424; max-width:70%;">
+                            Start the year off strong and explore how to track your activities, health, and fitness with Apple Watch and iPhone.
+                        </p>
+                        <h4>$128.99</h4>
+                        <a class="btn-style-2" href="#">DISCOVER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-best-sell">
+            <div class="best-selling-area pt-55 pb-25">
+                <div class="container">
+                    <div class="top-bar section-border mb-20">
+                        <div class="section-title-wrapper" style="background-color: #f8f9f9;">
+                            <h4 class="section-title" style="color: #242424">Best Selling Products</h4>
+                        </div>
+                        <div class="product-tab-list-2 nav" style="background-color: #f8f9f9;">
+                            <a class="active" href="#">
+                                <h4>Smart Phones & Tablets</h4>
+                            </a>
+                            <a href="#">
+                                <h4>Laptops & Computers</h4>
+                            </a>
+                            <a href="#">
+                                <h4>Video Cameras</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-content jump">
+                        <div class="tab-pane active">
+                            <div class="best-selling-active nav-style owl-carousel owl-loaded owl-drag">
+                                <div class="best-selling-bundle">
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 2</span>
+                                            <h4><a href="#">Demo product title</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$80.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 5</span>
+                                            <h4><a href="#">Demo product title</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$50.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="best-selling-bundle">
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd3.jpg" alt="">
+                                            </a>
+                                            <span class="sale">Sale</span>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 3</span>
+                                            <h4><a href="#">Variable product </a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$61.00</span>
+                                                <span class="product-price-old">
+                                                    <span class="money">$85.00</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 5</span>
+                                            <h4><a href="#">Product title here</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$50.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="best-selling-bundle">
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 7</span>
+                                            <h4><a href="#">Demo product title</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$29.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 2</span>
+                                            <h4><a href="#">New badge product</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$80.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="best-selling-bundle">
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd7.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 11</span>
+                                            <h4><a href="#">Product with video</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$39.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd8.jpg" alt="">
+                                            </a>
+                                            <span class="sale">Sale</span>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 10</span>
+                                            <h4><a href="#">Demo product title</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$19.00</span>
+                                                <span class="product-price-old">
+                                                    <span class="money">$21.00</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="best-selling-bundle">
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd9.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 11</span>
+                                            <h4><a href="#">Dummy text for title</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$39.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best-selling-pro-wrapper mb-20">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="public/images/product/md-pd10.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content best-pro-content"><span>Type 11</span>
+                                            <h4><a href="#">Product dummy title</a></h4>
+                                            <div class="product-price-wrapper">
+                                                <span class=money>$39.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-top-headphone">
+            <div class="product-top">
+                <div class="container">
+                    <div class="section-border mb-10">
+                        <h4 class="section-title" style="color: #242424; background: #fff;">
+                            Top Headphones
+                        </h4>
+                    </div>
+                    <div class="product-slider-nav nav-style">
+                    </div>
+                    <div class="owl-carousel headphone-slider-active mt-20">
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd1.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 2</span>
+                                <h4><a href="#">Demo product title</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class=money>$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img">
+                                <div class="product-img-slider">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd2.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 5</span>
+                                <h4><a href="#">Demo product title</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class=money>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd3.jpg" alt="">
+                                    </a>
+                                    <span class="sale">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 3</span>
+                                <h4><a href="#">Variable product</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$61.00</span>
+                                    <span class="product-price-old">
+                                        <span class="money">$85.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd4.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 5</span>
+                                <h4><a href="#">Product title here</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd5.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 7</span>
+                                <h4><a href="#">Demo product title</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$29.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd6.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 2</span>
+                                <h4><a href="#">New bagde product</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd7.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 11</span>
+                                <h4><a href="#">Product with video</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$39.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd8.jpg" alt="">
+                                    </a>
+                                    <span class="sale">Sale</span>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 10</span>
+                                <h4><a href="#">Demo product title</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$19.00</span>
+                                    <span class="product-price-old">
+                                        <span class="money">$21.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd9.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 11</span>
+                                <h4><a href="#">Dummy text for title</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$39.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devita-product-2">
+                            <div class="product-img-slider">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="public/images/product/md-pd3.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-content text-center"><span>Type 11</span>
+                                <h4><a href="#">Product dummy title</a></h4>
+                                <div class="product-price-wrapper">
+                                    <span class="money">$39.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand-logo">
+            <div class="brand-logo-area">
+                <div class="container">
+                    <div class="brand-logo-active owl-carousel border-top-2 ptb-60 owl-loaded owl-drag">
+                        <div class="single-brand-logo">
+                            <img src="public/images/BrandLogo/brand-logo-1.png" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="public/images/BrandLogo/brand-logo-2.png" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="public/images/BrandLogo/brand-logo-3.png" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="public/images/BrandLogo/brand-logo-4.png" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="public/images/BrandLogo/brand-logo-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-service">
+            <div class="shop-service-area">
+                <div class="container">
+                    <div class="shop-service-wrapper">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="shop-service-content text-center">
+                                    <h4 style="color: #fff">Free Shipping</h4>
+                                    <p style="color: #dddddd">Free shipping on all order</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="shop-service-content text-center">
+                                    <h4 style="color: #fff">Money Return</h4>
+                                    <p style="color: #dddddd">30 days for free return</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="shop-service-content text-center">
+                                    <h4 style="color: #fff">Online Support</h4>
+                                    <p style="color: #dddddd">Support 24 hours a day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="bg-img">
+            <div class="footer-top-section">
+                <div class="footer-area footer_top pt-65 pb-25">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-widget mb-40">
+                                    <div class="footer-title mb-30">
+                                        <h4 style="color: #ffffff">About Us</h4>
+                                    </div>
+                                    <div class="footer-about">
+                                        <p style="color: #dddddd">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart [...].</p>
+                                        <div class="footer-map">
+                                            <a href="#" style="color: #dddddd">
+                                                <i class="fa-solid fa-location-dot"></i> View on map
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="social-icon mr-40">
+                                        <ul>
+                                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+                                            </li>
+                                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            </li>
+                                            <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                            <li><a class="googleplus" href="#"><i
+                                                        class="fa-brands fa-google-plus"></i></a></li>
+                                            <li><a class="rss" href="#"><i class="fa-solid fa-rss"></i></a></li>
+                                            <li><a class="dribbble" href="#"><i class="fa-brands fa-dribbble"></i></a>
+                                            </li>
+                                            <li><a class="vimeo" href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                                            <li><a class="pinterest" href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                            </li>
+                                            <li><a class="skype" href="#"><i class="fa-brands fa-skype"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6">
+                                <div class="footer-widget mb-40">
+                                    <div class="footer-title mb-30">
+                                        <h4 style="color: #ffffff">Information</h4>
+                                    </div>
+                                    <div class="footer-content">
+                                        <ul>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Delivery Information</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>
+                                            <li><a href="#">Customer Service</a></li>
+                                            <li><a href="#">Return Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6">
+                                <div class="footer-widget mb-40">
+                                    <div class="footer-title mb-30">
+                                        <h4 style="color: #ffffff">My Account</h4>
+                                    </div>
+                                    <div class="footer-content">
+                                        <ul>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Order History</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                            <li><a href="#">Newsletter</a></li>
+                                            <li><a href="#">Money Return</a></li>
+                                            <li><a href="#">International Orders</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-widget mb-40">
+                                    <div class="footer-title mb-30">
+                                        <h4 style="color: #ffffff">Contact Us</h4>
+                                    </div>
+                                    <div class="footer-contact">
+                                        <p style="color: #dddddd">
+                                            Address: Your address goes here.
+                                            <br> Telephone Enquiry: (012) 345 678 789-123
+                                            <br> Email: info@example.com
+                                        </p>
+                                    </div>
+                                    <div class="opening-time">
+                                        <h4 style="color: #ffffff">Opening Time</h4>
+                                        <div class="opening-content">
+                                            <p style="color: #dddddd">
+                                                Open: 8:00 AM - Close: 18:00 PM
+                                                <br> Saturday - Sunday: Close
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-middle-section">
+                <div class="footer-area footer_middle" style="background: #282829;">
+                    <div class="container">
+                        <div class="pt-65 pb-65" style="border-top: 1px solid #323232;">
+                            <div class="row ">
+                                <div class="col-12">
+                                    <div class="footer-middle text-center">
+                                        <div class="footer-tag">
+                                            <ul>
+                                                <li><a href="#">Online Shopping</a></li>
+                                                <li><a href="#">Promotions</a></li>
+                                                <li><a href="#">My Orders</a></li>
+                                                <li><a href="#">Help</a></li>
+                                                <li><a href="#">Customer Service</a></li>
+                                                <li><a href="#">Support</a></li>
+                                                <li><a href="#">Most Populars</a></li>
+                                                <li><a href="#">New Arrivals</a></li>
+                                                <li><a href="#">Special Products</a></li>
+                                                <li><a href="#">Manufacturers</a></li>
+                                                <li><a href="#">Our Stores</a></li>
+                                                <li><a href="#">Shipping</a></li>
+                                                <li><a href="#">Payments</a></li>
+                                                <li><a href="#">Warantee</a></li>
+                                                <li><a href="#">Refunds</a></li>
+                                                <li><a href="#">Checkout</a></li>
+                                                <li><a href="#">Discount</a></li>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">Policy Shipping</a></li>
+                                                <li><a href="#">Returns</a></li>
+                                                <li><a href="#">Refunds</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="payment-icon mt-20">
+                                            <img src="public/images/payment_large.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-section">
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="pb-20 pt-20" style="border-top: 1px solid rgba(0,0,0,0);">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    <div class="copyright text-center">
+                                        <p>
+                                            © Copyright
+                                            <a href="#">99Shopify</a> All Rights Reserved.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="./public/js/owl.carousel.min.js "></script>
+    <script src="public/js/web.js "></script>
+    <script>
+        // Banner 1
+        $('.slider-active').owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            item: 1,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+
+        // Product best sell
+        $('.best-selling-active').owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            navText: ['<i class="fa-solid fa-angle-left "></i>', '<i class="fa-solid fa-angle-right "></i>'],
+            item: 3,
+            margin: 20,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 2
+                },
+                1100: {
+                    items: 3
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        })
+
+        // Product top
+        $('.headphone-slider-active').each(function() {
+            var proSlideNav = $(this).siblings('.product-slider-nav');
+            $(this).owlCarousel({
+                navContainer: proSlideNav,
+                loop: true,
+                nav: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                navText: ['<i class="fa-solid fa-angle-left "></i>', '<i class="fa-solid fa-angle-right "></i>'],
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                items: 5,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            })
+        })
+
+        // Brand logo
+        $('.brand-logo-active').owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            items: 5,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
